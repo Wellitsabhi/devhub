@@ -1,0 +1,149 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* .wrapper {
+    margin-top: 20px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+  }
+  
+  .wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--lm-bg);
+    color: var(--lm-text);
+    position: relative;
+    font-size: 13px;
+  }
+
+
+
+.profile-link {
+  display: flex; 
+  align-items: center; 
+}
+
+.profile-link span a {
+  margin-right: 8px; 
+}
+
+.material-symbols-outlined {
+  margin-top: 10px;
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+.navbar {
+    background-color: #0d6efd;
+}
+
+.navbar img {
+    margin-right: 8px;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+.flex-row {
+    flex-wrap: wrap;
+}
+
+#userImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.flex-column {
+    flex: 1;
+}
+
+#repos-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 10px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar img {
+        margin-right: 4px;
+    }
+
+    #userImage {
+        width: 80px;
+        height: 80px;
+    }
+
+    .flex-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flex-column {
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .pagination {
+        margin-top: 20px;
+    }
+}
+
+.made-with-love {
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; 
+    text-decoration: none; 
+}
+
+.made-with-love a{
+                color: rgb(67, 220, 217);
+}
+
+/* Additional styles for larger screens */
+@media (min-width: 768px) {
+    .made-with-love {
+        position: static; /* Reset position for larger screens */
+        margin-top: 20px; /* Add some spacing from the content */
+    }
+}
+
+
+
+
+/* loader */
+#loader {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: url('./assets/loader.gif') no-repeat center center;
+    background-size: cover;
+}
+
+
+

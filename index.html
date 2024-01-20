@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tag  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GitHub clone project, with similar functionalities and API calls">
+
+  <!-- Title -->
+  <title>DevHub</title>
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <!-- Google  Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- BootStrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- JS file -->
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper  w-75  mw-80 m-auto">
+
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid bg-dark text-white rounded-2">
+          <div class="d-flex align-items-center">
+            <img src="./assets/logo.png" width="30" height="30" class="align-top pr-8" style="margin-right: 8px;"
+              alt="Logo">
+            <h4 class="m-0">DevHub</h4>
+          </div>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <span class="input-group-text bg-dark text-white" id="basic-addon1">@</span>
+              <input id="input" type="text" class="form-control bg-opacity-75  text-dark "
+                placeholder="Enter a Github username" required autofocus class="Username"
+                aria-describedby="basic-addon1">
+            </div>
+
+            <div class="error">
+              <p id="noResults">no search results</p>
+            </div>
+
+            <button id="btn" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Section -->
+    <!-- Profile & Detail -->
+    <!-- Main Content -->
+    <section>
+      <div class="d-flex flex-row gap-3">
+        <!-- Profile Pic -->
+        <div>
+          <div>
+            <img id="userImage" alt="Profile picture of the user" class="rounded-bottom-circle img-thumbnail"
+              loading="lazy" />
+          </div>
+        </div>
+        <!-- Detail -->
+        <div>
+          <div class="d-flex flex-column">
+            <h2 id="name">name</h2>
+            <a href="" target="_blank" rel="noopener noreferrer" id="username"></a>
+            <p id="bio">Bio</p>
+            <p id="location"></p>
+            <p id="twitter">twitr</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- profile link -->
+      <div class="profile-link">
+        <span class="mx-2">
+          <span class="material-symbols-outlined">link</span>
+        </span>
+        <a id="url" href="" target="_blank"></a>
+      </div>
+
+
+      <!-- Section -->
+      <!-- Horizontal Break -->
+      <div class="w-100 h-0 d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2 bg-dark">
+      </div>
+
+      <!-- Section -->
+      <!-- Repos -->
+      <div>
+      </div>
+      <div class=" flex-column">
+
+        <div id="repos-container" class="d-flex flex-column  flex-grow-2 m-5 g-5 ">
+          <!-- user repo -->
+          <div class="card w-25 ">
+            <div class="card-header" id="repoName">
+              Repo name
+            </div>
+            <div class="card-body">
+              <h5 class="card-title" id="repoDescription">Description of repo</h5>
+              <p class="card-text" id="updated">When repo updated</p>
+              <a href="#" class="btn btn-primary" id="repoLanguage">Lang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <section>
+      <nav aria-label="...">
+        <ul class="pagination  flex justify-content-center" id="paginationContainer">
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Footer -->
+    <div class="made-with-love">
+      <p>Made with 	&#10084; &#65039; by 
+        <a href="https://www.linkedin.com/in/wellitsabhi" target="_blank" rel="noopener noreferrer">Abhishek Singh</a>
+      </p>
+      <p>&copy; 2024 DevHub. All rights/wrong reserved.</p>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader"></div>
+
+  </div>
+  <!-- BootStrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
